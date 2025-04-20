@@ -38,15 +38,53 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-[#131313] text-white">
-      {/* Hero Section - 이미지 배경 */}
+      {/* Hero Section - 우주 배경 */}
       <div className="relative w-full h-screen overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
+        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#131313] z-10"></div>
         <img 
-          src="https://ifh.cc/g/Op3vy5.jpg" 
-          alt="수익 증명 배경" 
+          src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
+          alt="우주 배경" 
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
+        {/* 별똥별 효과 */}
+        <div className="absolute inset-0 z-10 opacity-70">
+          <motion.div 
+            className="absolute w-1 h-20 bg-gradient-to-b from-transparent via-white to-transparent"
+            initial={{ top: "-10%", left: "10%", rotate: 15 }}
+            animate={{ top: "120%", left: "5%" }}
+            transition={{ 
+              duration: 3, 
+              repeat: Infinity, 
+              repeatDelay: 7,
+              ease: "easeIn"
+            }}
+          />
+          <motion.div 
+            className="absolute w-1 h-32 bg-gradient-to-b from-transparent via-white to-transparent"
+            initial={{ top: "-10%", left: "35%", rotate: 15 }}
+            animate={{ top: "120%", left: "30%" }}
+            transition={{ 
+              duration: 2.5, 
+              repeat: Infinity, 
+              repeatDelay: 4,
+              ease: "easeIn",
+              delay: 2
+            }}
+          />
+          <motion.div 
+            className="absolute w-1 h-24 bg-gradient-to-b from-transparent via-white to-transparent"
+            initial={{ top: "-10%", left: "75%", rotate: 15 }}
+            animate={{ top: "120%", left: "70%" }}
+            transition={{ 
+              duration: 3.2, 
+              repeat: Infinity, 
+              repeatDelay: 5,
+              ease: "easeIn",
+              delay: 1
+            }}
+          />
+        </div>
         
         <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
           <motion.div
@@ -54,10 +92,10 @@ export default function LandingPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-6">
+            <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-6 text-white drop-shadow-lg">
               여기 글쓰기로 1억을<br />버는 사람들이 있습니다.
             </h1>
-            <p className="text-xl md:text-2xl font-medium text-gray-200 mb-10">
+            <p className="text-xl md:text-2xl font-medium text-gray-200 mb-10 drop-shadow-md">
               글쓰기를 통한 수 천 만원의 계약 건들<br />(과연 이런 수익 창출이 끝일까요?)
             </p>
             <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-8 py-6 text-xl">
@@ -327,20 +365,40 @@ export default function LandingPage() {
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-16 text-center">자주 묻는 질문 (FAQ)</h2>
         
-        <div className="space-y-8 mb-16 max-w-3xl mx-auto bg-white/5 p-8 rounded-xl border border-white/10">
+        <div className="space-y-4 mb-16 max-w-3xl mx-auto bg-white/5 p-8 rounded-xl border border-white/10">
           <FAQItem 
             question="Q. 글쓰기 경험이 없어도 되나요?"
-            answer="A. 전혀 상관없습니다. 초보자도 실습하며 실력을 빠르게 쌓을 수 있습니다."
+            answer="A. 전혀 상관없습니다. 저희 프로그램은 모든 수준의 작가를 위해 설계되었습니다. 초보자도 실습하며 실력을 빠르게 쌓을 수 있고, 제공되는 템플릿과 가이드라인을 통해 단계별로 작성 기술을 향상시킬 수 있습니다. 많은 고객님들이 처음 시작할 때 글쓰기 경험이 거의 없었지만, 몇 주 안에 효과적인 콘텐츠를 만들어내기 시작했습니다."
           />
           
           <FAQItem 
             question="Q. AI 챗봇을 잘 몰라도 괜찮나요?"
-            answer="A. 모든 챗봇은 매뉴얼과 함께 제공되며, 교육도 포함되어 있어 처음이어도 문제 없습니다."
+            answer="A. 물론입니다. 모든 챗봇은 상세한 매뉴얼과 함께 제공되며, 교육 패키지에는 단계별 사용법 교육도 포함되어 있어 처음이어도 전혀 문제 없습니다. 기술적 지식이 없어도 챗봇 인터페이스는 직관적으로 설계되어 있어 쉽게 적응하실 수 있습니다. 또한 첫 한 달간은 기술 지원을 통해 어려움이 있으시면 언제든지 도움을 요청하실 수 있습니다."
           />
           
           <FAQItem 
             question="Q. 수익화까지 얼마나 걸릴까요?"
-            answer="A. 빠르면 2~3주 안에 콘텐츠 반응이 오고, 수익화도 그 뒤를 따릅니다."
+            answer="A. 빠르면 2~3주 안에 콘텐츠 반응이 오기 시작하고, 수익화도 그 뒤를 따릅니다. 물론 이는 콘텐츠 품질, 일관성, 그리고 타겟 시장에 따라 달라질 수 있습니다. 저희 고객 데이터에 따르면 평균적으로 3개월 이내에 유의미한 수익이 발생하기 시작했습니다. 중요한 것은 꾸준함입니다. 주기적으로 콘텐츠를 발행하고 점차 개선해 나가는 것이 성공의 핵심입니다."
+          />
+          
+          <FAQItem 
+            question="Q. 어떤 종류의 비즈니스에 효과적인가요?"
+            answer="A. 저희 솔루션은 다양한 산업 분야에 적용 가능합니다. B2B 컨설팅, 온라인 코칭, 이커머스, 콘텐츠 크리에이터, 서비스 기반 비즈니스 등 여러 분야에서 성공 사례가 있습니다. 각 비즈니스의 특성에 맞게 AI 챗봇과 콘텐츠 전략이 맞춤 설계되므로, 어떤 분야에서든 효과를 볼 수 있습니다. 다만, 디지털 마케팅과 온라인 비즈니스를 영위하는 기업이나 개인에게 특히 효과적입니다."
+          />
+          
+          <FAQItem 
+            question="Q. 얼마나 많은 시간을 투자해야 하나요?"
+            answer="A. 초기에는 주당 3-5시간 정도의 투자가 권장됩니다. 브랜드 인터뷰와 전략 수립 단계에서는 조금 더 많은 시간이 필요할 수 있지만, 시스템이 구축된 후에는 주당 2-3시간 정도로 효과적인 관리가 가능합니다. 물론 더 많은 시간을 투자할수록 결과가 더 빨리 나타날 수 있습니다. 대행 서비스를 선택하시면 시간 투자를 최소화하면서도 전문적인 결과물을 얻으실 수 있습니다."
+          />
+          
+          <FAQItem 
+            question="Q. 결제 후 얼마나 빨리 시작할 수 있나요?"
+            answer="A. 결제 완료 후 24시간 이내에 시작 안내와 함께 초기 설정을 도와드립니다. 기본형 챗봇은 즉시 사용 가능하며, 업그레이드 챗봇과 컨설팅 패키지는 일정 조율 후 3-5일 이내에 첫 세션이 진행됩니다. 전체 셋업은 보통 1-2주 내에 완료되어 본격적인 활용이 가능해집니다."
+          />
+          
+          <FAQItem 
+            question="Q. 환불 정책은 어떻게 되나요?"
+            answer="A. 서비스 시작 후 7일 이내에 요청하시면 100% 환불이 가능합니다(단, 맞춤 제작된 챗봇이나 컨설팅 세션이 시작된 경우 제외). 7일 이후 30일까지는 사용하지 않은 서비스에 대해 50% 환불이 가능합니다. 자세한 환불 정책은 계약서에 명시되어 있으며, 특별한 상황의 경우 개별적으로 상담해 드립니다."
             isLast={true}
           />
         </div>
