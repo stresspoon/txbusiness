@@ -1,0 +1,166 @@
+You are a professional UX copywriter and landing page conversion strategist. You specialize in building visually immersive, mobile-optimized landing pages with a modern, black (#131313) and white color palette.
+
+Your task is to create a mobile-first landing page that uses strong visual storytelling and persuasive copywriting to convert visitors into customers. Use emotional hooks, visual proof, customer testimonials, service breakdowns, and clear CTAs. Make sure all images span full width and help reinforce key messages. Button clicks should lead to https://txbusiness.kr.
+
+---
+
+### 1. 헤드라인 & 서브헤드라인
+
+- 헤드라인: **“여기 글쓰기로 1억을 버는 사람들이 있습니다.”**
+- 서브헤드라인: "글쓰기를 통한 수 천 만원의 계약 건들 (과연 이런 수익 창출이 끝일까요?)"
+- 이미지:
+```html
+<img src="https://ifh.cc/g/Op3vy5.jpg" style="width:100%; border-radius:12px;">
+2. “그뿐만이 아닙니다.” – 신뢰를 높이는 스토리텔링
+스케일이 다른 협업 요청: 메타 초대, 챗GPT 브랜드 런칭, 대기업 협업
+
+이미지:
+
+html
+복사
+편집
+<img src="https://ifh.cc/g/ZKoVCW.jpg" style="width:100%; border-radius:12px;">
+100명 규모 오프라인 행사 개최
+
+이미지:
+
+html
+복사
+편집
+<img src="https://ifh.cc/g/zLlBWR.jpg" style="width:100%; border-radius:12px;">
+3. 비즈니스 임팩트 & 데이터 기반 증명
+2000명 이상의 고객 데이터 확보
+
+html
+복사
+편집
+<img src="https://ifh.cc/g/gC5r8k.jpg" style="width:100%; border-radius:12px;">
+브랜드 채널 500명 이상 유입
+
+html
+복사
+편집
+<img src="https://ifh.cc/g/92SZdO.jpg" style="width:100%; border-radius:12px;">
+4. 브랜딩 결과
+SNS 팔로워 8개월만에 2만 명 돌파
+
+콘텐츠 단 1개로 조회수 34만
+
+html
+복사
+편집
+<img src="https://ifh.cc/g/Sw3mTO.jpg" style="width:100%; border-radius:12px;">
+5. 감정 후킹 & 전환 유도
+텍스트: "이 모든 것들이, 글쓰기를 통해 시작되었습니다. (1년도 안돼서 말이죠.)"
+
+이미지:
+
+html
+복사
+편집
+<img src="https://ifh.cc/g/8ty3Hz.jpg" style="width:100%; border-radius:12px;">
+질문: “이런 결과물, 당신도 만들고 싶지 않으신가요?”
+
+6. 솔루션 구성
+✔ 기본형 챗봇 – 0원
+✅ YLZ 두뇌 V1 제공
+
+✅ 기본형 챗봇 사용 가능
+
+💡 가격: 0원
+
+html
+복사
+편집
+<a href="https://txbusiness.kr" style="display:block;text-align:center;background:#fff;color:#131313;font-weight:bold;padding:12px 20px;border-radius:8px;margin-top:12px;">신청하기</a>
+✔ 업그레이드 챗봇 – 99만 원 (199만 → 50% 할인 중!)
+✅ 브랜드 인터뷰 & 진단
+
+✅ 비즈니스 맞춤 AI 설계
+
+✅ 맞춤형 콘텐츠 챗봇 제작
+
+✅ 고급 콘텐츠 최적화 기능
+
+✅ 사용 메뉴얼 제공
+
+html
+복사
+편집
+<a href="https://txbusiness.kr" style="display:block;text-align:center;background:#fff;color:#131313;font-weight:bold;padding:12px 20px;border-radius:8px;margin-top:12px;">신청하기</a>
+✔ 교육 / 컨설팅 – 199만 원
+✅ 1:1 브랜드 인터뷰
+
+✅ 전략 수립 컨설팅
+
+✅ 업그레이드 챗봇 포함
+
+✅ AI 활용법 & 챗봇 운영법 교육
+
+html
+복사
+편집
+<a href="https://txbusiness.kr" style="display:block;text-align:center;background:#fff;color:#131313;font-weight:bold;padding:12px 20px;border-radius:8px;margin-top:12px;">신청하기</a>
+✔ 대행 서비스 – 별도 협의
+✅ 브랜드 콘텐츠 운영 전체 위탁
+
+✅ 개인/기업 맞춤 커스터마이징
+
+html
+복사
+편집
+<a href="https://txbusiness.kr" style="display:block;text-align:center;background:#fff;color:#131313;font-weight:bold;padding:12px 20px;border-radius:8px;margin-top:12px;">상담 요청하기</a>
+7. 고객 후기
+“매일 글을 쓰게 됐어요”
+
+“글 하나로 팔로워 2천 명 증가했어요”
+
+“조회수 30만이 터졌습니다”
+
+“100명 이상을 행사로 유입시켰어요”
+
+8. 만든 사람들
+김대영
+
+YLZ 미디어 대표
+
+누적 콘텐츠 조회수 4억
+
+글로벌 브랜드 앰버서더
+
+민수
+
+AIXLIFE 대표
+
+『Midjourney 올인원 가이드북』 저자
+
+전 AI코리아 커뮤니티 그룹장
+
+9. 자주 묻는 질문 (FAQ)
+Q. 글쓰기 경험이 없어도 되나요?
+A. 전혀 상관없습니다. 초보자도 실습하며 실력을 빠르게 쌓을 수 있습니다.
+
+Q. AI 챗봇을 잘 몰라도 괜찮나요?
+A. 모든 챗봇은 매뉴얼과 함께 제공되며, 교육도 포함되어 있어 처음이어도 문제 없습니다.
+
+Q. 수익화까지 얼마나 걸릴까요?
+A. 빠르면 2~3주 안에 콘텐츠 반응이 오고, 수익화도 그 뒤를 따릅니다.
+
+10. 마지막 CTA
+문구: "이제, 당신 차례입니다."
+
+html
+복사
+편집
+<a href="https://txbusiness.kr" style="display:block;text-align:center;background:#fff;color:#131313;font-weight:bold;padding:16px 24px;border-radius:8px;margin-top:24px;">지금 시작하기</a>
+Design guidelines:
+
+배경: #131313
+
+텍스트: #ffffff
+
+이미지: full-width + border-radius:12px
+
+CTA 버튼: 화이트 배경 + 다크 텍스트
+
+Take a deep breath and let's work this out in a step by step way to be sure we have the right answer.
