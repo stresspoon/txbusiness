@@ -92,10 +92,10 @@ export default function LandingPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-6 text-white drop-shadow-lg">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight mb-6 text-white drop-shadow-lg">
               여기 글쓰기로 1억을<br />버는 사람들이 있습니다.
             </h1>
-            <p className="text-xl md:text-2xl font-medium text-gray-200 mb-10 drop-shadow-md">
+            <p className="text-lg sm:text-xl md:text-2xl font-medium text-gray-200 mb-8 sm:mb-10 drop-shadow-md">
               글쓰기를 통한 수 천 만원의 계약 건들<br />(과연 이런 수익 창출이 끝일까요?)
             </p>
             <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-8 py-6 text-xl">
@@ -131,8 +131,8 @@ export default function LandingPage() {
 
       {/* Story Section - 그 뿐만이 아닙니다 */}
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
-        <h2 className="text-4xl font-bold mb-8 text-center">그뿐만이 아닙니다.</h2>
-        <p className="text-2xl mb-12 text-center">스케일이 다른 협업 요청:<br />메타 초대, 챗GPT 브랜드 런칭, 대기업 협업</p>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center">그뿐만이 아닙니다.</h2>
+        <p className="text-xl sm:text-2xl mb-8 sm:mb-12 text-center">스케일이 다른 협업 요청:<br />메타 초대, 챗GPT 브랜드 런칭, 대기업 협업</p>
         <div className="mb-16">
           <img src="https://ifh.cc/g/ZKoVCW.jpg" alt="대형 브랜드 협업 이미지" className="w-full max-w-4xl h-auto mx-auto rounded-xl shadow-lg" />
         </div>

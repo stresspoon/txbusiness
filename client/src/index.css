@@ -11,3 +11,70 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+/* 모바일에서의 글자 크기 조정 */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem !important; /* 더 작게 조정 */
+  }
+  
+  h2 {
+    font-size: 1.75rem !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  p {
+    font-size: 1rem !important;
+  }
+  
+  .text-xl {
+    font-size: 1.125rem !important;
+  }
+  
+  .text-2xl {
+    font-size: 1.35rem !important;
+  }
+  
+  .text-3xl {
+    font-size: 1.5rem !important;
+  }
+  
+  .text-4xl {
+    font-size: 1.75rem !important;
+  }
+  
+  .text-5xl {
+    font-size: 2rem !important;
+  }
+  
+  /* 모바일에서 여백 줄이기 */
+  .py-20 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  .mb-16 {
+    margin-bottom: 2rem !important;
+  }
+  
+  .mb-12 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .mb-10 {
+    margin-bottom: 1.25rem !important;
+  }
+}
+
+/* 스크롤바 숨기기 */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

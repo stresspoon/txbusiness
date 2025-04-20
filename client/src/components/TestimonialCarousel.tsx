@@ -44,7 +44,7 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
                   <div className="flex items-center mb-6">
                     <div className="text-yellow-400 text-2xl">★★★★★</div>
                   </div>
-                  <p className="text-lg md:text-xl mb-8 italic leading-relaxed">"{testimonial.quote}"</p>
+                  <p className="text-lg md:text-xl mb-8 italic leading-relaxed sm:text-base">"{testimonial.quote}"</p>
                   <div className="border-t border-white/10 pt-4">
                     <p className="font-semibold text-lg">{testimonial.author}</p>
                     <p className="text-gray-400">{testimonial.position}</p>
