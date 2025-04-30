@@ -105,6 +105,67 @@ export default function LandingPage() {
         </div>
       </div>
 
+      {/* 성과 하이라이트 그리드 - 4개 이미지 1:1 비율 */}
+      <section className="px-4 py-12 mx-auto max-w-screen-xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* 이미지 1: 글쓰기를 통한 수천만원의 계약 건들 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/Rg4LgK.jpg" 
+                alt="글쓰기를 통한 수천만원의 계약 건들" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">글쓰기를 통한 수천만원의 계약 건들</h3>
+            </div>
+          </div>
+
+          {/* 이미지 2: 100명 대규모 오프라인 행사 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/zLlBWR.jpg" 
+                alt="100명 대규모 오프라인 행사" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">100명 대규모 오프라인 행사</h3>
+            </div>
+          </div>
+
+          {/* 이미지 3: 8개월만에 2만명 돌파 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/Sw3mTO.jpg" 
+                alt="8개월만에 2만명 돌파" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">8개월만에 2만명 돌파</h3>
+            </div>
+          </div>
+
+          {/* 이미지 4: ChatGPT 샘알트만 신규 브랜드 협업 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/yVXK80.jpg" 
+                alt="ChatGPT 샘알트만 신규 브랜드 협업" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">ChatGPT 샘알트만 신규 브랜드 협업</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 실적 증명 섹션 */}
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
         <div className="text-center mb-12">
@@ -113,7 +174,7 @@ export default function LandingPage() {
         </div>
         
         <div className="flex justify-center">
-          <img src="https://ifh.cc/g/Op3vy5.jpg" alt="수익 증명 스크린샷" className="w-full max-w-4xl h-auto rounded-xl shadow-lg" />
+          <img src="https://ifh.cc/g/Rg4LgK.jpg" alt="수익 증명 스크린샷" className="w-full max-w-4xl h-auto rounded-xl shadow-lg" />
         </div>
       </section>
 
