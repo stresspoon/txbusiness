@@ -166,18 +166,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 실적 증명 섹션 */}
-      <section className="px-4 py-20 mx-auto max-w-screen-xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">글쓰기를 통한 수천만원의 계약 건들</h2>
-          <p className="text-xl text-gray-300">실제 성과를 확인하세요</p>
-        </div>
-        
-        <div className="flex justify-center">
-          <img src="https://ifh.cc/g/Rg4LgK.jpg" alt="수익 증명 스크린샷" className="w-full max-w-4xl h-auto rounded-xl shadow-lg" />
-        </div>
-      </section>
-
       {/* Section Divider - 더 강력한 분위기 */}
       <div className="relative">
         <SectionDivider icon="✨" />
@@ -189,74 +177,6 @@ export default function LandingPage() {
           viewport={{ once: true }}
         />
       </div>
-
-      {/* Story Section - 그 뿐만이 아닙니다 */}
-      <section className="px-4 py-20 mx-auto max-w-screen-xl">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center">그뿐만이 아닙니다.</h2>
-        <p className="text-xl sm:text-2xl mb-8 sm:mb-12 text-center">스케일이 다른 협업 요청:<br />메타 초대, 챗GPT 브랜드 런칭, 대기업 협업</p>
-        <div className="mb-16">
-          <img src="https://ifh.cc/g/ZKoVCW.jpg" alt="대형 브랜드 협업 이미지" className="w-full max-w-4xl h-auto mx-auto rounded-xl shadow-lg" />
-        </div>
-        <p className="text-2xl mb-12 text-center">100명 규모 오프라인 행사 개최</p>
-        <div className="mb-16">
-          <img src="https://ifh.cc/g/zLlBWR.jpg" alt="오프라인 행사 이미지" className="w-full max-w-4xl h-auto mx-auto rounded-xl shadow-lg" />
-        </div>
-      </section>
-
-      {/* Section Divider - 더 강력한 분위기 */}
-      <div className="relative">
-        <SectionDivider icon="📊" />
-        <motion.div 
-          className="absolute left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 via-white/80 to-blue-500" 
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          transition={{ duration: 1.5 }}
-          viewport={{ once: true }}
-        />
-      </div>
-
-      {/* Business Impact Section */}
-      <section className="px-4 py-20 mx-auto max-w-screen-xl">
-        <h2 className="text-4xl font-bold mb-8 text-center">비즈니스 임팩트 & 데이터 기반 증명</h2>
-        <p className="text-2xl mb-12 text-center">2000명 이상의 고객 데이터 확보</p>
-        <div className="mb-16">
-          <img src="https://ifh.cc/g/gC5r8k.jpg" alt="고객 데이터 통계" className="w-full max-w-4xl h-auto mx-auto rounded-xl shadow-lg" />
-        </div>
-        <p className="text-2xl mb-12 text-center">브랜드 채널 500명 이상 유입</p>
-        <div className="mb-16">
-          <img src="https://ifh.cc/g/92SZdO.jpg" alt="브랜드 채널 유입 통계" className="w-full max-w-4xl h-auto mx-auto rounded-xl shadow-lg" />
-        </div>
-      </section>
-
-      {/* Section Divider - 더 강력한 분위기 */}
-      <div className="relative">
-        <SectionDivider icon="🚀" />
-        <motion.div 
-          className="absolute left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-500 via-white/80 to-yellow-500" 
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          transition={{ duration: 1.5 }}
-          viewport={{ once: true }}
-        />
-      </div>
-
-      {/* Branding Results Section */}
-      <section className="px-4 py-20 mx-auto max-w-screen-xl">
-        <h2 className="text-4xl font-bold mb-12 text-center">브랜딩 결과</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
-          <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-            <h3 className="text-2xl font-bold mb-4">SNS 팔로워</h3>
-            <p className="text-5xl font-black mb-2 text-yellow-400">8개월만에<br />2만 명 돌파</p>
-          </div>
-          <div className="bg-white/5 p-8 rounded-xl border border-white/10">
-            <h3 className="text-2xl font-bold mb-4">콘텐츠 효과</h3>
-            <p className="text-5xl font-black mb-2 text-yellow-400">단 1개로<br />조회수 34만</p>
-          </div>
-        </div>
-        <div className="mb-16">
-          <img src="https://ifh.cc/g/Sw3mTO.jpg" alt="콘텐츠 성과 통계" className="w-full max-w-4xl h-auto mx-auto rounded-xl shadow-lg" />
-        </div>
-      </section>
 
       {/* Section Divider - 더 강력한 분위기 */}
       <div className="relative">
@@ -274,9 +194,6 @@ export default function LandingPage() {
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-4 text-center">이 모든 것들이, 글쓰기를 통해 시작되었습니다.</h2>
         <p className="text-2xl text-center mb-12">(1년도 안돼서 말이죠.)</p>
-        <div className="mb-16">
-          <img src="https://ifh.cc/g/8ty3Hz.jpg" alt="글쓰기 결과물" className="w-full max-w-4xl h-auto mx-auto rounded-xl shadow-lg" />
-        </div>
         <div className="text-center mb-16">
           <p className="text-3xl font-bold">이런 결과물, 당신도 만들고 싶지 않으신가요?</p>
         </div>
@@ -365,10 +282,85 @@ export default function LandingPage() {
         />
       </div>
 
-      {/* Testimonials Section - 자동 이동 캐러셀 */}
+      {/* 추가 혜택 그리드 - 4개 이미지 1:1 비율 */}
+      <section className="px-4 py-12 mx-auto max-w-screen-xl">
+        <h2 className="text-4xl font-bold mb-10 text-center">추가 혜택</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {/* 이미지 1: 국내 마케팅 분야 1위 콘텐츠 채널 공동 운영 제안 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/WpopSd.jpg" 
+                alt="국내 마케팅 분야 1위 콘텐츠 채널 공동 운영 제안" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">국내 마케팅 분야 1위 콘텐츠 채널 공동 운영 제안</h3>
+            </div>
+          </div>
+
+          {/* 이미지 2: 대기업 공간 무료 활용 제안 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/PltFjD.jpg" 
+                alt="대기업 공간 무료 활용 제안" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">대기업 공간 무료 활용 제안</h3>
+            </div>
+          </div>
+
+          {/* 이미지 3: 2000명 이상의 고객 데이터 확보 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/RROO6k.jpg" 
+                alt="2000명 이상의 고객 데이터 확보" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">2000명 이상의 고객 데이터 확보</h3>
+            </div>
+          </div>
+
+          {/* 이미지 4: 브랜드 채널 500명 이상 유입 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/XcLNf2.jpg" 
+                alt="브랜드 채널 500명 이상 유입" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">브랜드 채널 500명 이상 유입</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section - 가로 4개 후기 */}
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-16 text-center">고객 후기</h2>
-        <TestimonialCarousel testimonials={testimonials} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {testimonials.slice(0, 4).map((testimonial, index) => (
+            <div key={index} className="bg-white/5 rounded-xl border border-white/10 p-6 flex flex-col h-full">
+              <div className="flex items-center mb-4">
+                <div className="text-yellow-400 text-xl">★★★★★</div>
+              </div>
+              <p className="text-gray-300 italic mb-4 flex-grow">{testimonial.quote.length > 120 ? testimonial.quote.substring(0, 120) + '...' : testimonial.quote}</p>
+              <div className="border-t border-white/10 pt-4 mt-auto">
+                <p className="font-semibold">{testimonial.author}</p>
+                <p className="text-gray-400 text-sm">{testimonial.position}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Section Divider - 더 강력한 분위기 */}
@@ -399,12 +391,12 @@ export default function LandingPage() {
           />
           
           <TeamMember 
-            name="민수"
+            name="나민수"
             emoji="👨‍💻"
             positions={[
               "AIXLIFE 대표",
-              "『Midjourney 올인원 가이드북』 저자",
-              "전 AI코리아 커뮤니티 그룹장"
+              "AI 컨설팅 및 활용 코치",
+              "AI 스레드/인스타 2.5만 인플루언서"
             ]}
           />
         </div>
