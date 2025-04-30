@@ -105,12 +105,18 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* 성과 하이라이트 그리드 - 4개 이미지 1:1 비율 */}
-      <section className="px-4 py-12 mx-auto max-w-screen-xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* 이미지 1: 글쓰기를 통한 수천만원의 계약 건들 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
-            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+      {/* 성과 하이라이트 - 애니메이션 슬라이드 효과 */}
+      <section className="px-4 py-12 mx-auto max-w-screen-xl overflow-hidden">
+        {/* 이미지 1: 글쓰기를 통한 수천만원의 계약 건들 */}
+        <motion.div 
+          className="flex mb-16"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <div className="w-2/3 bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[56.25%]">
               <img 
                 src="https://ifh.cc/g/Rg4LgK.jpg" 
                 alt="글쓰기를 통한 수천만원의 계약 건들" 
@@ -118,13 +124,21 @@ export default function LandingPage() {
               />
             </div>
             <div className="p-4">
-              <h3 className="font-bold text-center">글쓰기를 통한 수천만원의 계약 건들</h3>
+              <h3 className="font-bold">글쓰기를 통한 수천만원의 계약 건들</h3>
             </div>
           </div>
+        </motion.div>
 
-          {/* 이미지 2: 100명 대규모 오프라인 행사 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
-            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+        {/* 이미지 2: 100명 대규모 오프라인 행사 */}
+        <motion.div 
+          className="flex justify-end mb-16"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <div className="w-2/3 bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[56.25%]">
               <img 
                 src="https://ifh.cc/g/zLlBWR.jpg" 
                 alt="100명 대규모 오프라인 행사" 
@@ -132,13 +146,21 @@ export default function LandingPage() {
               />
             </div>
             <div className="p-4">
-              <h3 className="font-bold text-center">100명 대규모 오프라인 행사</h3>
+              <h3 className="font-bold">100명 대규모 오프라인 행사</h3>
             </div>
           </div>
+        </motion.div>
 
-          {/* 이미지 3: 8개월만에 2만명 돌파 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
-            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+        {/* 이미지 3: 8개월만에 2만명 돌파 */}
+        <motion.div 
+          className="flex mb-16"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <div className="w-2/3 bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[56.25%]">
               <img 
                 src="https://ifh.cc/g/Sw3mTO.jpg" 
                 alt="8개월만에 2만명 돌파" 
@@ -146,13 +168,21 @@ export default function LandingPage() {
               />
             </div>
             <div className="p-4">
-              <h3 className="font-bold text-center">8개월만에 2만명 돌파</h3>
+              <h3 className="font-bold">8개월만에 2만명 돌파</h3>
             </div>
           </div>
+        </motion.div>
 
-          {/* 이미지 4: ChatGPT 샘알트만 신규 브랜드 협업 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
-            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+        {/* 이미지 4: ChatGPT 샘알트만 신규 브랜드 협업 */}
+        <motion.div 
+          className="flex justify-end mb-16"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <div className="w-2/3 bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[56.25%]">
               <img 
                 src="https://ifh.cc/g/yVXK80.jpg" 
                 alt="ChatGPT 샘알트만 신규 브랜드 협업" 
@@ -160,23 +190,11 @@ export default function LandingPage() {
               />
             </div>
             <div className="p-4">
-              <h3 className="font-bold text-center">ChatGPT 샘알트만 신규 브랜드 협업</h3>
+              <h3 className="font-bold">ChatGPT 샘알트만 신규 브랜드 협업</h3>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
-
-      {/* Section Divider - 더 강력한 분위기 */}
-      <div className="relative">
-        <SectionDivider icon="✨" />
-        <motion.div 
-          className="absolute left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 via-white/80 to-purple-500" 
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          transition={{ duration: 1.5 }}
-          viewport={{ once: true }}
-        />
-      </div>
 
       {/* Section Divider - 더 강력한 분위기 */}
       <div className="relative">
@@ -392,11 +410,11 @@ export default function LandingPage() {
           
           <TeamMember 
             name="나민수"
-            emoji="👨‍💻"
+            image="https://ifh.cc/g/hKNL7r.jpg"
             positions={[
               "AIXLIFE 대표",
               "AI 컨설팅 및 활용 코치",
-              "AI 스레드/인스타 2.5만 인플루언서"
+              "스레드/인스타 2.5만 AI 인플루언서"
             ]}
           />
         </div>
@@ -467,14 +485,14 @@ export default function LandingPage() {
       >
         <h2 className="text-5xl font-black mb-12">이제, 당신 차례입니다.</h2>
         <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-10 py-8 text-2xl">
-          <a href="https://txbusiness.kr">지금 시작하기</a>
+          <a href="https://txbusiness.kr">지금 문의하기</a>
         </Button>
       </motion.section>
 
       {/* Footer */}
       <footer className="px-4 py-12 mt-12 border-t border-gray-800">
         <div className="mx-auto max-w-screen-xl text-center">
-          <p className="text-gray-400 text-sm">&copy; 2023 YLZ 미디어 & AIXLIFE. All rights reserved.</p>
+          <p className="text-gray-400 text-sm">&copy; 2025 YLZ 미디어 & AIXLIFE. All rights reserved.</p>
         </div>
       </footer>
     </div>
