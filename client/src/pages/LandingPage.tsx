@@ -181,7 +181,10 @@ export default function LandingPage() {
       {/* Emotional Hook Section */}
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-4 text-center">이 모든 것들이, 글쓰기를 통해 시작되었습니다.</h2>
-        <p className="text-2xl text-center mb-12">(1년도 안돼서 말이죠.)</p>
+        <p className="text-2xl text-center mb-8">(1년도 안되서 말이죠.)</p>
+        <div className="mb-12 max-w-2xl mx-auto">
+          <img src="https://ifh.cc/g/8ty3Hz.jpg" alt="글쓰기 결과물" className="w-full h-auto rounded-xl shadow-lg" />
+        </div>
         <div className="text-center mb-16">
           <p className="text-3xl font-bold">이런 결과물, 당신도 만들고 싶지 않으신가요?</p>
         </div>
@@ -277,12 +280,12 @@ export default function LandingPage() {
         {/* 국내 마케팅 분야 1위 등 이미지 그리드 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {/* 이미지 1: 국내 마케팅 분야 1위 콘텐츠 채널 공동 운영 제안 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 group transition duration-300">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/WpopSd.jpg" 
                 alt="국내 마케팅 분야 1위 콘텐츠 채널 공동 운영 제안" 
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover transition duration-300 transform group-hover:scale-150"
               />
             </div>
             <div className="p-4">
@@ -291,12 +294,12 @@ export default function LandingPage() {
           </div>
 
           {/* 이미지 2: 대기업 공간 무료 활용 제안 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 group transition duration-300">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/PltFjD.jpg" 
                 alt="대기업 공간 무료 활용 제안" 
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover transition duration-300 transform group-hover:scale-150"
               />
             </div>
             <div className="p-4">
@@ -305,12 +308,12 @@ export default function LandingPage() {
           </div>
 
           {/* 이미지 3: 2000명 이상의 고객 데이터 확보 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 group transition duration-300">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/RROO6k.jpg" 
                 alt="2000명 이상의 고객 데이터 확보" 
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover transition duration-300 transform group-hover:scale-150"
               />
             </div>
             <div className="p-4">
@@ -319,12 +322,12 @@ export default function LandingPage() {
           </div>
 
           {/* 이미지 4: 브랜드 채널 500명 이상 유입 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 group transition duration-300">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/XcLNf2.jpg" 
                 alt="브랜드 채널 500명 이상 유입" 
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover transition duration-300 transform group-hover:scale-150"
               />
             </div>
             <div className="p-4">
@@ -452,7 +455,7 @@ export default function LandingPage() {
       >
         <h2 className="text-5xl font-black mb-12">이제, 당신 차례입니다.</h2>
         <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-10 py-8 text-2xl">
-          <a href="https://txbusiness.kr">지금 시작하기</a>
+          <a href="https://txbusiness.kr">지금 문의하기</a>
         </Button>
       </motion.section>
 
