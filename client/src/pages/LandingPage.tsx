@@ -109,7 +109,7 @@ export default function LandingPage() {
       <section className="px-4 py-12 mx-auto max-w-screen-xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* 이미지 1: 글쓰기를 통한 수천만원의 계약 건들 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-150">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/Rg4LgK.jpg" 
@@ -123,7 +123,7 @@ export default function LandingPage() {
           </div>
 
           {/* 이미지 2: 100명 대규모 오프라인 행사 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-150">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/zLlBWR.jpg" 
@@ -137,7 +137,7 @@ export default function LandingPage() {
           </div>
 
           {/* 이미지 3: 8개월만에 2만명 돌파 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-150">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/Sw3mTO.jpg" 
@@ -151,7 +151,7 @@ export default function LandingPage() {
           </div>
 
           {/* 이미지 4: ChatGPT 샘알트만 신규 브랜드 협업 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-150">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/yVXK80.jpg" 
@@ -182,8 +182,8 @@ export default function LandingPage() {
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-4 text-center">이 모든 것들이, 글쓰기를 통해 시작되었습니다.</h2>
         <p className="text-2xl text-center mb-8">(1년도 안되서 말이죠.)</p>
-        <div className="mb-12 max-w-2xl mx-auto transform transition-transform duration-300 hover:scale-150">
-          <img src="https://ifh.cc/g/8ty3Hz.jpg" alt="글쓰기 결과물" className="w-full h-auto rounded-xl shadow-lg" />
+        <div className="mb-12 max-w-2xl mx-auto">
+          <img src="https://ifh.cc/g/8ty3Hz.jpg" alt="글쓰기 결과물" className="w-full h-auto rounded-xl shadow-lg scale-150" />
         </div>
         <div className="text-center mb-16">
           <p className="text-3xl font-bold">이런 결과물, 당신도 만들고 싶지 않으신가요?</p>
