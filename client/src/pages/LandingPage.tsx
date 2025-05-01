@@ -212,6 +212,65 @@ export default function LandingPage() {
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-4 text-center">이 모든 것들이, 글쓰기를 통해 시작되었습니다.</h2>
         <p className="text-2xl text-center mb-12">(1년도 안돼서 말이죠.)</p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {/* 첫 번째 이미지 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[56.25%]">
+              <img 
+                src="https://ifh.cc/g/x6xXXs.jpg" 
+                alt="글쓰기로 내 브랜드 확장하기" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold">글쓰기로 내 브랜드 확장하기</h3>
+            </div>
+          </div>
+          
+          {/* 두 번째 이미지 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[56.25%]">
+              <img 
+                src="https://ifh.cc/g/LOb87l.jpg" 
+                alt="대기업 파트너십 체결" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold">대기업 파트너십 체결</h3>
+            </div>
+          </div>
+          
+          {/* 세 번째 이미지 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[56.25%]">
+              <img 
+                src="https://ifh.cc/g/Sw3mTO.jpg" 
+                alt="8개월만에 2만명 돌파" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold">8개월만에 2만명 돌파</h3>
+            </div>
+          </div>
+          
+          {/* 네 번째 이미지 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[56.25%]">
+              <img 
+                src="https://ifh.cc/g/yVXK80.jpg" 
+                alt="ChatGPT 샘알트만 신규 브랜드 협업" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold">ChatGPT 샘알트만 신규 브랜드 협업</h3>
+            </div>
+          </div>
+        </div>
+        
         <div className="text-center mb-16">
           <p className="text-3xl font-bold">이런 결과물, 당신도 만들고 싶지 않으신가요?</p>
         </div>
@@ -365,6 +424,66 @@ export default function LandingPage() {
       {/* Testimonials Section - 가로 4개 후기 */}
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-16 text-center">고객 후기</h2>
+        
+        {/* 추가 혜택 그리드 - 4개 이미지 1:1 비율 */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {/* 이미지 1: 국내 마케팅 분야 1위 콘텐츠 채널 공동 운영 제안 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/WpopSd.jpg" 
+                alt="국내 마케팅 분야 1위 콘텐츠 채널 공동 운영 제안" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">국내 마케팅 분야 1위 콘텐츠 채널 공동 운영 제안</h3>
+            </div>
+          </div>
+
+          {/* 이미지 2: 대기업 공간 무료 활용 제안 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/PltFjD.jpg" 
+                alt="대기업 공간 무료 활용 제안" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">대기업 공간 무료 활용 제안</h3>
+            </div>
+          </div>
+
+          {/* 이미지 3: 2000명 이상의 고객 데이터 확보 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/RROO6k.jpg" 
+                alt="2000명 이상의 고객 데이터 확보" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">2000명 이상의 고객 데이터 확보</h3>
+            </div>
+          </div>
+
+          {/* 이미지 4: 브랜드 채널 500명 이상 유입 */}
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
+            <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
+              <img 
+                src="https://ifh.cc/g/XcLNf2.jpg" 
+                alt="브랜드 채널 500명 이상 유입" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="font-bold text-center">브랜드 채널 500명 이상 유입</h3>
+            </div>
+          </div>
+        </div>
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {testimonials.slice(0, 4).map((testimonial, index) => (
             <div key={index} className="bg-white/5 rounded-xl border border-white/10 p-6 flex flex-col h-full">
