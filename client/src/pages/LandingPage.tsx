@@ -178,18 +178,6 @@ export default function LandingPage() {
         />
       </div>
 
-      {/* Section Divider - 더 강력한 분위기 */}
-      <div className="relative">
-        <SectionDivider icon="💡" />
-        <motion.div 
-          className="absolute left-0 right-0 h-0.5 bg-gradient-to-r from-green-500 via-white/80 to-green-500" 
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          transition={{ duration: 1.5 }}
-          viewport={{ once: true }}
-        />
-      </div>
-
       {/* Emotional Hook Section */}
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-4 text-center">이 모든 것들이, 글쓰기를 통해 시작되었습니다.</h2>
@@ -282,9 +270,11 @@ export default function LandingPage() {
         />
       </div>
 
-      {/* 추가 혜택 그리드 - 4개 이미지 1:1 비율 */}
-      <section className="px-4 py-12 mx-auto max-w-screen-xl">
-        <h2 className="text-4xl font-bold mb-10 text-center">추가 혜택</h2>
+      {/* Testimonials Section - 가로 4개 후기 */}
+      <section className="px-4 py-20 mx-auto max-w-screen-xl">
+        <h2 className="text-4xl font-bold mb-16 text-center">고객 후기</h2>
+        
+        {/* 국내 마케팅 분야 1위 등 이미지 그리드 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {/* 이미지 1: 국내 마케팅 분야 1위 콘텐츠 채널 공동 운영 제안 */}
           <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10">
@@ -342,11 +332,6 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Testimonials Section - 가로 4개 후기 */}
-      <section className="px-4 py-20 mx-auto max-w-screen-xl">
-        <h2 className="text-4xl font-bold mb-16 text-center">고객 후기</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {testimonials.slice(0, 4).map((testimonial, index) => (
             <div key={index} className="bg-white/5 rounded-xl border border-white/10 p-6 flex flex-col h-full">
@@ -382,7 +367,7 @@ export default function LandingPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 max-w-3xl mx-auto">
           <TeamMember 
             name="김대영"
-            emoji="👨‍💼"
+            imageUrl="https://ifh.cc/g/klCwt9.jpg"
             positions={[
               "YLZ 미디어 대표",
               "누적 콘텐츠 조회수 4억",
@@ -392,11 +377,11 @@ export default function LandingPage() {
           
           <TeamMember 
             name="나민수"
-            emoji="👨‍💻"
+            imageUrl="https://ifh.cc/g/CPFkyd.jpg"
             positions={[
               "AIXLIFE 대표",
               "AI 컨설팅 및 활용 코치",
-              "AI 스레드/인스타 2.5만 인플루언서"
+              "스레드/인스타 2.5만 AI 인플루언서"
             ]}
           />
         </div>
