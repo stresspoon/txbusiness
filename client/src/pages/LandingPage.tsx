@@ -182,8 +182,8 @@ export default function LandingPage() {
       <section className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-4 text-center">이 모든 것들이, 글쓰기를 통해 시작되었습니다.</h2>
         <p className="text-2xl text-center mb-8">(1년도 안되서 말이죠.)</p>
-        <div className="mb-12 max-w-2xl mx-auto">
-          <img src="https://ifh.cc/g/8ty3Hz.jpg" alt="글쓰기 결과물" className="w-full h-auto rounded-xl shadow-lg scale-150" />
+        <div className="mb-12 max-w-2xl mx-auto overflow-visible" style={{ height: '450px' }}>
+          <img src="https://ifh.cc/g/8ty3Hz.jpg" alt="글쓰기 결과물" className="w-full h-auto rounded-xl shadow-lg" style={{ transform: 'scale(1.5)', transformOrigin: 'center center' }} />
         </div>
         <div className="text-center mb-16">
           <p className="text-3xl font-bold">이런 결과물, 당신도 만들고 싶지 않으신가요?</p>
@@ -455,7 +455,7 @@ export default function LandingPage() {
       >
         <h2 className="text-5xl font-black mb-12">이제, 당신 차례입니다.</h2>
         <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-10 py-8 text-2xl">
-          <a href="https://txbusiness.kr">지금 문의하기</a>
+          <a href="http://pf.kakao.com/_lxkxjXG">지금 문의하기</a>
         </Button>
       </motion.section>
 
