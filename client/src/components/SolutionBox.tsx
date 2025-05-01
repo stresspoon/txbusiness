@@ -45,7 +45,7 @@ export default function SolutionBox({
       <CardFooter className="p-6 pt-2 mt-auto">
         <Button asChild className={`w-full text-[#131313] font-bold ${isRecommended ? 'bg-yellow-400 hover:bg-yellow-500' : 'bg-white hover:bg-gray-200'}`}>
           {title === "대행 서비스" ? (
-            <a href="https://pf.kakao.com/_Xkkmxj" target="_blank" rel="noopener noreferrer">{ctaText}</a>
+            <a href="http://pf.kakao.com/_lxkxjXG" target="_blank" rel="noopener noreferrer">{ctaText}</a>
           ) : (
             <a href="https://txbusiness.kr">{ctaText}</a>
           )}
