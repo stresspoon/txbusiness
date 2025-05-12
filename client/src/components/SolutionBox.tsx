@@ -47,7 +47,7 @@ export default function SolutionBox({
           {title === "대행 서비스" ? (
             <a href="http://pf.kakao.com/_lxkxjXG" target="_blank" rel="noopener noreferrer">{ctaText}</a>
           ) : (title === "기본형 챗봇" ? (
-            <a href="https://txbusiness.kr">{ctaText}</a>
+            <a href="https://chatgpt.com/g/g-67f0cda3e5c8819197dcff2f5abd9e33-ylz-saeroun-dunoe-v1" target="_blank" rel="noopener noreferrer">{ctaText}</a>
           ) : (
             <a href="https://sponge-cucumber-5a6.notion.site/AI-1f1644f66e50809d88c9f8ee39353763" target="_blank" rel="noopener noreferrer">{ctaText}</a>
           ))}
