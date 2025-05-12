@@ -99,7 +99,7 @@ export default function LandingPage() {
               글쓰기를 통한 수 천 만원의 계약 건들<br />(과연 이런 수익 창출이 끝일까요?)
             </p>
             <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-8 py-6 text-xl">
-              <a href="https://txbusiness.kr">지금 문의하기</a>
+              <a href="https://pf.kakao.com/_lxkxjXG" target="_blank" rel="noopener noreferrer">지금 문의하기</a>
             </Button>
           </motion.div>
         </div>
@@ -455,7 +455,7 @@ export default function LandingPage() {
       >
         <h2 className="text-5xl font-black mb-12">이제, 당신 차례입니다.</h2>
         <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-10 py-8 text-2xl">
-          <a href="http://pf.kakao.com/_lxkxjXG">지금 문의하기</a>
+          <a href="https://pf.kakao.com/_lxkxjXG" target="_blank" rel="noopener noreferrer">지금 문의하기</a>
         </Button>
       </motion.section>
 
