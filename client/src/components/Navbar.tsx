@@ -5,7 +5,9 @@ export default function Navbar() {
     <div className="fixed top-0 inset-x-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur supports-[backdrop-filter]:bg-black/30">
       <div className="mx-auto max-w-screen-xl px-4 h-16 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
-          <img src="/image/TXB_logo.png" alt="TXB Logo" className="h-6 w-6 object-contain" />
+          <div className="h-6 w-6 rounded-md bg-gradient-to-br from-yellow-400 to-amber-600 overflow-hidden">
+            <img src="/image/brand.png" alt="TXB Logo" className="h-full w-full object-contain" />
+          </div>
           <span className="font-bold tracking-tight">TXB</span>
         </a>
         <div className="hidden sm:flex items-center gap-6 text-sm text-white/70">
