@@ -98,7 +98,7 @@ export default function LandingPage() {
               여기 글쓰기로 1억을<br />버는 사람들이 있습니다.
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl font-medium text-gray-200 mb-8 sm:mb-10 drop-shadow-md max-w-3xl">
-              글쓰기를 통한 수 천 만원의 계약 건들. 그리고 브랜드 채널 성장과 리드 생성까지, 한 번의 전략적 글쓰기로 시작해 보세요.
+              글쓰기를 통한 수 천 만원의 계약 건들.<br className="hidden sm:inline" /> 그리고 브랜드 채널 성장과 리드 생성까지, 한 번의 전략적 글쓰기로 시작해 보세요.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-3 justify-center">
               <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-8 py-6 text-xl">
@@ -119,7 +119,7 @@ export default function LandingPage() {
           <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-105 hover:z-10">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
-                src="https://ifh.cc/g/Rg4LgK.jpg" 
+                src="/image/dollor.png" 
                 alt="글쓰기를 통한 수천만원의 계약 건들" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -133,7 +133,7 @@ export default function LandingPage() {
           <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-105 hover:z-10">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
-                src="https://ifh.cc/g/zLlBWR.jpg" 
+                src="/image/threads.png" 
                 alt="100명 대규모 오프라인 행사" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -161,7 +161,7 @@ export default function LandingPage() {
           <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-105 hover:z-10">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
-                src="https://ifh.cc/g/yVXK80.jpg" 
+                src="/image/brand.png" 
                 alt="ChatGPT 샘알트만 신규 브랜드 협업" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -390,22 +390,20 @@ export default function LandingPage() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 max-w-3xl mx-auto">
           <TeamMember 
-            name="김대영"
-            imageUrl="https://ifh.cc/g/klCwt9.jpg"
+            imageUrl="/image/프로필 1.png"
             positions={[
-              "YLZ 미디어 대표",
-              "누적 콘텐츠 조회수 4억",
-              "글로벌 브랜드 앰버서더"
+              "누적 콘텐츠 조회수 4억+",
+              "상위 1% 참여율 기록",
+              "글로벌 브랜드 협업 경험",
             ]}
           />
           
           <TeamMember 
-            name="나민수"
-            imageUrl="https://ifh.cc/g/CPFkyd.jpg"
+            imageUrl="/image/프로필 2.png"
             positions={[
-              "AIXLIFE 대표",
-              "AI 컨설팅 및 활용 코치",
-              "스레드/인스타 2.5만 AI 인플루언서"
+              "AI 활용 교육/코칭 500+명",
+              "콘텐츠 전환율 최적화",
+              "SNS 2.5만 팔로워의 인사이트",
             ]}
           />
         </div>
