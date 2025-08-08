@@ -12,6 +12,7 @@ interface SolutionBoxProps {
   discount?: string;
   features: SolutionFeature[];
   ctaText: string;
+  ctaHref?: string;
   isRecommended?: boolean;
 }
 
@@ -21,6 +22,7 @@ export default function SolutionBox({
   discount, 
   features, 
   ctaText,
+  ctaHref,
   isRecommended = false
 }: SolutionBoxProps) {
   return (
@@ -44,13 +46,15 @@ export default function SolutionBox({
       </CardContent>
       <CardFooter className="p-6 pt-2 mt-auto">
         <Button asChild className={`w-full text-[#131313] font-bold ${isRecommended ? 'bg-yellow-400 hover:bg-yellow-500' : 'bg-white hover:bg-gray-200'}`}>
-          {title === "대행 서비스" ? (
-            <a href="http://pf.kakao.com/_lxkxjXG" target="_blank" rel="noopener noreferrer">{ctaText}</a>
-          ) : (title === "기본형 챗봇" ? (
-            <a href="https://chatgpt.com/g/g-67f0cda3e5c8819197dcff2f5abd9e33-ylz-saeroun-dunoe-v1" target="_blank" rel="noopener noreferrer">{ctaText}</a>
-          ) : (
-            <a href="https://sponge-cucumber-5a6.notion.site/TXB-1dc644f66e5080bebba9c2686dd021dc" target="_blank" rel="noopener noreferrer">{ctaText}</a>
-          ))}
+          {(() => {
+            const defaultHref = title === "기본형 챗봇"
+              ? "https://chatgpt.com/g/g-67f0cda3e5c8819197dcff2f5abd9e33-ylz-saeroun-dunoe-v1"
+              : "https://sponge-cucumber-5a6.notion.site/TXB-1dc644f66e5080bebba9c2686dd021dc";
+            const href = ctaHref ?? defaultHref;
+            return (
+              <a href={href} target="_blank" rel="noopener noreferrer">{ctaText}</a>
+            );
+          })()}
         </Button>
       </CardFooter>
     </Card>
