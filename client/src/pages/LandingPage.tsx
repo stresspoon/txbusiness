@@ -5,6 +5,7 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 import SolutionBox from "@/components/SolutionBox";
 import TeamMember from "@/components/TeamMember";
 import FAQItem from "@/components/FAQItem";
+import Navbar from "@/components/Navbar";
 
 export default function LandingPage() {
   // 더 풍부한 고객 후기 데이터
@@ -37,11 +38,11 @@ export default function LandingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#131313] text-white">
+    <div className="min-h-screen bg-[#0B0B0B] text-white">
+      <Navbar />
       {/* Hero Section - 우주 배경 */}
-      <div className="relative w-full h-screen overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#131313] z-10"></div>
+      <div className="relative w-full min-h-screen overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-black/80 z-10"></div>
         <img 
           src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
           alt="우주 배경" 
@@ -86,30 +87,36 @@ export default function LandingPage() {
           />
         </div>
         
-        <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
+        <div className="relative z-20 flex flex-col items-center justify-center h-[85vh] px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight mb-6 text-white drop-shadow-lg">
+            <p className="uppercase tracking-widest text-white/70 mb-3">AI Content & Growth</p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight mb-6 text-gradient">
               여기 글쓰기로 1억을<br />버는 사람들이 있습니다.
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl font-medium text-gray-200 mb-8 sm:mb-10 drop-shadow-md">
-              글쓰기를 통한 수 천 만원의 계약 건들<br />(과연 이런 수익 창출이 끝일까요?)
+            <p className="text-lg sm:text-xl md:text-2xl font-medium text-gray-200 mb-8 sm:mb-10 drop-shadow-md max-w-3xl">
+              글쓰기를 통한 수 천 만원의 계약 건들. 그리고 브랜드 채널 성장과 리드 생성까지, 한 번의 전략적 글쓰기로 시작해 보세요.
             </p>
-            <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-8 py-6 text-xl">
-              <a href="https://pf.kakao.com/_lxkxjXG" target="_blank" rel="noopener noreferrer">지금 문의하기</a>
-            </Button>
+            <div className="flex flex-col sm:flex-row items-center gap-3 justify-center">
+              <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-8 py-6 text-xl">
+                <a href="https://pf.kakao.com/_lxkxjXG" target="_blank" rel="noopener noreferrer">지금 문의하기</a>
+              </Button>
+              <Button asChild variant="secondary" className="bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-6 text-xl border border-white/20">
+                <a href="#pricing">가격 보기</a>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </div>
 
       {/* 성과 하이라이트 그리드 - 4개 이미지 1:1 비율 */}
-      <section className="px-4 py-12 mx-auto max-w-screen-xl">
+      <section className="px-4 py-16 mx-auto max-w-screen-xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* 이미지 1: 글쓰기를 통한 수천만원의 계약 건들 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-150">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-105 hover:z-10">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/Rg4LgK.jpg" 
@@ -123,7 +130,7 @@ export default function LandingPage() {
           </div>
 
           {/* 이미지 2: 100명 대규모 오프라인 행사 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-150">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-105 hover:z-10">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/zLlBWR.jpg" 
@@ -137,7 +144,7 @@ export default function LandingPage() {
           </div>
 
           {/* 이미지 3: 8개월만에 2만명 돌파 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-150">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-105 hover:z-10">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/Sw3mTO.jpg" 
@@ -151,7 +158,7 @@ export default function LandingPage() {
           </div>
 
           {/* 이미지 4: ChatGPT 샘알트만 신규 브랜드 협업 */}
-          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-150">
+          <div className="bg-white/5 rounded-xl overflow-hidden border border-white/10 transform transition-transform duration-300 hover:scale-105 hover:z-10">
             <div className="relative pb-[100%]"> {/* 1:1 비율 유지 */}
               <img 
                 src="https://ifh.cc/g/yVXK80.jpg" 
@@ -179,11 +186,25 @@ export default function LandingPage() {
       </div>
 
       {/* Emotional Hook Section */}
-      <section className="px-4 py-20 mx-auto max-w-screen-xl">
+      <section id="features" className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-4 text-center">이 모든 것들이, 글쓰기를 통해 시작되었습니다.</h2>
         <p className="text-2xl text-center mb-8">(1년도 안되서 말이죠.)</p>
-        <div className="mb-32 max-w-2xl mx-auto overflow-visible" style={{ height: '500px' }}>
-          <img src="https://ifh.cc/g/8ty3Hz.jpg" alt="글쓰기 결과물" className="w-full h-auto rounded-xl shadow-lg" style={{ transform: 'scale(1.5)', transformOrigin: 'center top' }} />
+        <div className="mb-24 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <h3 className="text-xl font-bold mb-2">채널 성장</h3>
+            <p className="text-white/80">브랜드 채널 구독자/팔로워 증가를 설계된 콘텐츠 전략으로 구현합니다.</p>
+          </div>
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <h3 className="text-xl font-bold mb-2">리드 생성</h3>
+            <p className="text-white/80">글 하나로 유입→관심→문의로 이어지는 여정을 최적화합니다.</p>
+          </div>
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <h3 className="text-xl font-bold mb-2">수익화</h3>
+            <p className="text-white/80">콘텐츠-오퍼-세일즈를 단일 흐름으로 연결해 빠른 매출화를 돕습니다.</p>
+          </div>
+        </div>
+        <div className="mb-20 max-w-3xl mx-auto overflow-visible glow rounded-xl">
+          <img src="https://ifh.cc/g/8ty3Hz.jpg" alt="글쓰기 결과물" className="w-full h-auto rounded-xl" />
         </div>
         <div className="text-center mb-16">
           <p className="text-3xl font-bold">이런 결과물, 당신도 만들고 싶지 않으신가요?</p>
@@ -203,7 +224,7 @@ export default function LandingPage() {
       </div>
 
       {/* Solution Section - 가로 4개 솔루션 */}
-      <section className="px-4 py-20 mx-auto max-w-screen-xl">
+      <section id="pricing" className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-16 text-center">솔루션 구성</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
@@ -403,7 +424,7 @@ export default function LandingPage() {
       </div>
 
       {/* FAQ Section */}
-      <section className="px-4 py-20 mx-auto max-w-screen-xl">
+      <section id="faq" className="px-4 py-20 mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold mb-16 text-center">자주 묻는 질문 (FAQ)</h2>
         
         <div className="space-y-4 mb-16 max-w-3xl mx-auto bg-white/5 p-8 rounded-xl border border-white/10">
@@ -453,7 +474,7 @@ export default function LandingPage() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-5xl font-black mb-12">이제, 당신 차례입니다.</h2>
+        <h2 className="text-5xl font-black mb-12 text-gradient">이제, 당신 차례입니다.</h2>
         <Button asChild className="bg-white hover:bg-gray-200 text-[#131313] font-bold px-10 py-8 text-2xl">
           <a href="https://pf.kakao.com/_lxkxjXG" target="_blank" rel="noopener noreferrer">지금 문의하기</a>
         </Button>
