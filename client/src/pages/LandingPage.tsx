@@ -234,8 +234,7 @@ export default function LandingPage() {
             price="9.9만 원"
             features={[
               { text: "티투비 두뇌 V1 제공" },
-              { text: "티투비 챗봇 사용 가능" },
-              { text: "가격: 9.9만 원" }
+              { text: "티투비 챗봇 사용 가능" }
             ]}
             ctaText="신청하기"
           />
@@ -271,13 +270,12 @@ export default function LandingPage() {
           
           {/* Solution 4 */}
           <SolutionBox 
-            title="AI 대행"
+            title="AI 마케팅 대행"
             price="299만 원"
             features={[
-              { text: "경영진 1:1 브랜드·콘텐츠 전략 워크숍" },
-              { text: "시장·채널 진단 리포트 및 우선순위 도출" },
-              { text: "90일 성장 로드맵(KPI·캠페인·리소스 계획)" },
-              { text: "실행팀 코칭 & 주간 리뷰로 성과 정렬" }
+              { text: "전략 수립부터 실행까지 일괄 대행" },
+              { text: "채널·캠페인 운영 및 성과 관리" },
+              { text: "주간 리뷰로 빠른 개선" }
             ]}
             ctaText="상담 요청하기"
             ctaHref="http://pf.kakao.com/_lxkxjXG"
@@ -313,7 +311,7 @@ export default function LandingPage() {
               />
             </div>
             <div className="p-4">
-              <h3 className="font-bold text-center">국내 마케팅 분야 1위 콘텐츠 채널 공동 운영 제안</h3>
+              <h3 className="font-bold text-center">국내 마케팅 분야 1위 콘텐츠 채널<br />공동 운영 제안</h3>
             </div>
           </div>
 
@@ -451,7 +449,7 @@ export default function LandingPage() {
           
           <FAQItem 
             question="Q. 얼마나 많은 시간을 투자해야 하나요?"
-            answer="A. 초기에는 주당 3-5시간 정도의 투자가 권장됩니다. 브랜드 인터뷰와 전략 수립 단계에서는 조금 더 시간이 필요할 수 있지만, 시스템이 구축된 후에는 주당 2-3시간 정도로 충분한 운영이 가능합니다. 더 많은 시간을 투자할수록 결과가 더 빨리 나타날 수 있습니다. AI 대행을 선택하시면 핵심 의사결정과 실행 로드맵 정리에 집중하여 내부 리소스 투입을 최소화하면서도 성과에 직결되는 우선순위를 빠르게 설정할 수 있습니다."
+            answer="A. 초기에는 주당 3-5시간 정도의 투자가 권장됩니다. 브랜드 인터뷰와 전략 수립 단계에서는 조금 더 시간이 필요할 수 있지만, 시스템이 구축된 후에는 주당 2-3시간 정도로 충분한 운영이 가능합니다. 더 많은 시간을 투자할수록 결과가 더 빨리 나타날 수 있습니다. AI 마케팅 대행을 선택하시면 핵심 의사결정과 실행 로드맵 정리에 집중하여 내부 리소스 투입을 최소화하면서도 성과에 직결되는 우선순위를 빠르게 설정할 수 있습니다."
           />
           
           <FAQItem 
