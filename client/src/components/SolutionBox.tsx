@@ -47,7 +47,7 @@ export default function SolutionBox({
       <CardFooter className="p-6 pt-2 mt-auto">
         <Button asChild className={`w-full text-[#131313] font-bold ${isRecommended ? 'bg-yellow-400 hover:bg-yellow-500' : 'bg-white hover:bg-gray-200'}`}>
           {(() => {
-            const defaultHref = title === "기본형 챗봇"
+            const defaultHref = title === "티투비 챗봇"
               ? "https://chatgpt.com/g/g-67f0cda3e5c8819197dcff2f5abd9e33-ylz-saeroun-dunoe-v1"
               : "https://sponge-cucumber-5a6.notion.site/TXB-1dc644f66e5080bebba9c2686dd021dc";
             const href = ctaHref ?? defaultHref;
